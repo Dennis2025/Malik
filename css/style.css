@@ -227,3 +227,175 @@ section{
 .box{
   display: block;
 }
+
+/**
+=========================================================
+*/
+.contact{
+  position: relative;
+  min-height: 100%;
+  padding: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .contact-content h2{
+  font-size: 2.4rem;
+}
+.contact .contact-content p{
+  font-size: .938rem;
+}
+.contact-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact-container .contact-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-info .contact-box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contact-container .contact-info .contact-box .contact-icons{
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}
+.contact-container .contact-info .contact-box .contact-text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact-container .contact-info .contact-box .contact-text h3{
+  font-weight: 700;
+}
+.contact-form{
+  width: 40%;
+  padding: 40px;
+  border-left: 2px solid black;
+}
+.contact-form h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+.contact-form .input-box{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: .938rem;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  resize: none;
+}
+.contact-form .input-box span{
+  font-size: .94rem;
+  text-transform: uppercase;
+}
+
+.service h1{
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+}
+.service h1::after{
+  content: '';
+  background: black;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+.services i{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.services{
+  text-align: center;
+  font-size: .738rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 25px 10px;
+  transition: .5s;
+}
+.services:hover{
+  background: black;
+  color: white;
+}
+
+#about{
+  padding: 90px 0 0 0;
+  color: #000;
+  max-width: 100vw;
+}
+.abt-container{
+  padding: 10px 10%;
+
+}
+#about .abt-row{
+  margin-bottom: 8px;
+  border-bottom: 2px solid black;
+}
+.header-text2{
+  margin-bottom: 90px;
+}
+.abt-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 45%;
+}
+.about-col-1 img{
+  width: 100%;
+}
+.about-col-2{
+  flex-basis: 50%;
+  text-align: left;
+}
+.about-col-2 h3{
+  padding-top: 20px;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.about-col-2 p{
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 20px;
+}

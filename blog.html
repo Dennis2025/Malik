@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Motors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 15px 0px;
+}
+main section {
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+}
+
+main section.blog-single .blog {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+main section.blog-single .blog .blog-img {
+    width: 45%;
+}
+
+main section .blog .blog-img {
+    width: 100%;
+}
+main section .blog .blog-img img {
+    width: 100%;
+}
+main section .blog .blog-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 10px;
+}
+main section .blog .blog-content .blog-desc {
+    color: #a8a8a8;
+}
+main section .blog .blog-content .blog-details {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+main section .blog .blog-content .blog-details .blog-author-img {
+    display: flex;
+    align-items: center;
+}
+main section .blog .blog-content .blog-details .blog-author-img img {
+    width: 50px;
+}
+main section .blog .blog-content .blog-details .blog-author-details .blog-author-desig {
+    font-size: 13px;
+    color: #888888;
+}
+
+
+/*500-1200 M*/
+@media only screen and (max-width: 1150px) {
+    body {
+        padding: 25px 40px;
+    }
+    main {
+        row-gap: 35px;
+        padding: 0px;
+    }
+    main section {
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    main section.blog-single .blog {
+        flex-direction: column;
+    }
+    main section.blog-single .blog .blog-img {
+        width: 100%;
+    }
+    main section .blog .blog-content {
+        row-gap: 10px;
+    }
+    main section .blog .blog-content .blog-details {
+        margin-top: 5px;
+    }
+}
+
+</style>
+<body>
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <!-- Logo -->
+            <a href="index.html">Malik Motors</a>
+          </div>
+      
+          <!-- Navbar Links -->
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container">
+        <section class="blog-single">
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://rvs-blog-page.vercel.app/assets/img/Article-Image.png" alt="">
+                </div>
+                <div class="blog-content">
+                    <h2 class="blog-title">Weekly Newsletter: Tweets for Higher Engagements</h2>
+                    <p class="blog-desc">In thi Weekly newsletter, we will be covering ten types of engaging tweets. This is the guide if you're just starting out of Twitter.</p>
+                    <div class="blog-details">
+                        <div class="blog-author-img">
+                            <img src="https://www.pexels.com/photo/photo-of-man-in-white-shirt-with-round-black-analog-watch-697509/" alt="">
+                        </div>
+                        <div class="blog-author-details">
+                            <h4 class="blog-author-name">Dennis Johnson</h4>
+                            <div class="blog-author-desig">Content Manager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-grid">
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://rvs-blog-page.vercel.app/assets/img/Article-1-Image.png" alt="">
+                </div>
+                <div class="blog-content">
+                    <h2 class="blog-title">7 Tips for Organic Traffic to you car website</h2>
+                    <p class="blog-desc">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+                    <div class="blog-details">
+                        <div class="blog-author-img">
+                            <img src="https://rvs-blog-page.vercel.app/assets/img/User-Avatar-1.png" alt="">
+                        </div>
+                        <div class="blog-author-details">
+                            <h4 class="blog-author-name">Spencer David</h4>
+                            <div class="blog-author-desig">SEO Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://rvs-blog-page.vercel.app/assets/img/Article-2-Image.png" alt="">
+                </div>
+                <div class="blog-content">
+                    <h2 class="blog-title">How To Start Your Own Automotive Business</h2>
+                    <p class="blog-desc">Starting your own automotive business in 2023 has never been easier.</p>
+                    <div class="blog-details">
+                        <div class="blog-author-img">
+                            <img src="https://rvs-blog-page.vercel.app/assets/img/User-Avatar-2.png" alt="">
+                        </div>
+                        <div class="blog-author-details">
+                            <h4 class="blog-author-name">Sara Frey</h4>
+                            <div class="blog-author-desig">Business Leader</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://rvs-blog-page.vercel.app/assets/img/Article-3-Image.png" alt="">
+                </div>
+                <div class="blog-content">
+                    <h2 class="blog-title">5 Tips for Better Branding</h2>
+                    <p class="blog-desc">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+                    <div class="blog-details">
+                        <div class="blog-author-img">
+                            <img src="https://rvs-blog-page.vercel.app/assets/img/User-Avatar-3.png" alt="">
+                        </div>
+                        <div class="blog-author-details">
+                            <h4 class="blog-author-name">David Suns</h4>
+                            <div class="blog-author-desig">Brand Manager, Malik Motors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+          <!-- footer section  -->
+          <section class="footer">
+            <div class="box-container container">
+              <div class="box">
+                <h3>Our Branches</h3>
+                <a href=""><i class="fas fa-map-marker-alt"></i>United States</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Kenya</a>
+                  <a href=""><i class="fas fa-map-marker-alt"></i>Oslo</a>
+                    <a href=""><i class="fas fa-map-marker-alt"></i>India</a>
+                      <a href=""><i class="fas fa-map-marker-alt"></i>Japan</a>
+              </div>
+              <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="contact-us.html"><i class="fas fa-arrow-right"></i>Contact Us</a>
+                <a href="about-us.html"><i class="fas fa-arrow-right"></i>About Us</a>
+                <a href="models.html"><i class="fas fa-arrow-right"></i>Models</a>
+                <a href="services.html"><i class="fas fa-arrow-right"></i>Services</a>
+                <a href="blog.html"><i class="fas fa-arrow-right"></i>Blog</a>
+              </div>
+              <div class="box">
+                <h3>Contacts</h3>
+                <a href=""><i class="fas fa-phone"></i>+1(612)-544-7890</a>
+                <a href=""><i class="fas fa-phone"></i>+1(612)-544-7890</a>
+                <a href=""><i class="fas fa-envelope"></i>+1(612)-544-7890</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>United States, HQ</a>
+              </div>
+              <div class="box">
+                <h3>Social Links</h3>
+                <a href=""><i class="fab fa-facebook"></i>Facebook/a>
+                <a href=""><i class="fab fa-google"></i>Google +</a>
+                <a href=""><i class="fab fa-twitter"></i>Twitter</a>
+              </div>
+            </div>
+          </section>
+</body>
+</html>
